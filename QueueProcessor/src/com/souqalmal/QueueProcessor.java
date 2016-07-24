@@ -9,12 +9,12 @@ public class QueueProcessor {
 	// A queue object of strings, which is thread safe and fairness policy set to true to guarantee FIFO
 	private final BlockingQueue<String> queue = new ArrayBlockingQueue<>(100, true);
 	
-	private int counter = 0;
+	private Integer counter = 0; //Immutable
 	
 	private String queueItem;
 	
-	private int maxTimeout = 2001;
-	private int minTimeout = 500;
+	private Integer maxTimeout = 2001;
+	private Integer minTimeout = 500;
 	
 	
 	
