@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-public class QueueProcessor {
+final public class QueueProcessor {
 	
 	// A queue object of strings, which is thread safe and fairness policy set to true to guarantee FIFO
 	private final BlockingQueue<String> queue = new ArrayBlockingQueue<>(100, true);
